@@ -4,7 +4,6 @@ import NavBar from '../components/NavBar'
 const About: NextPage = () => {
   return (
     <>
-      <NavBar />
       <p>about</p>
     </>
   )
