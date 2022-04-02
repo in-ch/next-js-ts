@@ -1,10 +1,14 @@
 import NavBar from "./NavBar";
 
-export default function Layout({children}:any){
+type Props = {
+    title?: string,
+};
+
+export const Layout:React.FC<Props> = ({children}) => {
     return <>
         <NavBar />
         <div>
-
+            {children}
         </div>
     </>
 }
