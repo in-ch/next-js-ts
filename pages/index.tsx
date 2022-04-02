@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import { useState } from 'react';
 import styled from 'styled-components';
+import Head from "next/head";
+import Seo from './Seo';
 
 const Container = styled.div`
   width:50px;
@@ -9,14 +11,12 @@ const Container = styled.div`
 `;
 
 const Home: NextPage = () => {
-  const [counter, setCounter] = useState<number>(0);
   return (
     <>
-      <p>Counter {counter}</p>
-      <button
-        onClick={()=>setCounter((prev)=>prev+1)}
-      >+</button>
-      <Container />
+      <Seo
+        title="Home"
+      />
+      <h1>asdfasdfas</h1>
     </>
       
   )

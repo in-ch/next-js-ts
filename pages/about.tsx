@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
-import NavBar from '../components/NavBar'
+import Seo from './Seo'
 
 const About: NextPage = () => {
   return (
     <>
-      <p>about</p>
+      <Seo 
+        title="About"
+      />
+      <h1>about</h1>
     </>
   )
 }
