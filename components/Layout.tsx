@@ -4,11 +4,13 @@ type Props = {
     title?: string,
 };
 
-export const Layout:React.FC<Props> = ({children}) => {
+const Layout:React.FC<Props> = ({children}) => {
     return <>
         <NavBar />
         <div>
             {children}
         </div>
     </>
-}
+};
+
+export default Layout;

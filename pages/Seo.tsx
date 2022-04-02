@@ -1,9 +1,16 @@
 import Head from "next/head";
 
-export default function Seo({title}:any){
+
+type TitleProps = {
+    title:HTMLHeadElement | String;
+};
+
+const Seo = ({title}:TitleProps) => {
     return <>
         <Head>
             <title>{title}</title>
         </Head>
     </>
-}
+};
+
+export default Seo;
